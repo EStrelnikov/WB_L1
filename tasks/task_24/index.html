@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1 Задание 24</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+        }
+        th {
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <table id="data-table">
+        <thead>
+          <tr>
+            <th onclick="sortData('fname')">Имя</th>
+            <th onclick="sortData('lname')">Фамилия</th>
+            <th onclick="sortData('tel')">Телефон</th>
+            <th onclick="sortData('address')">Адрес</th>
+            <th onclick="sortData('city')">Город</th>
+            <th onclick="sortData('state')">Штат</th>
+            <th onclick="sortData('zip')">Почтовый индекс</th>
+          </tr>
+        </thead>
+        <tbody id="data-body">
+        </tbody>
+      </table>
+      <div id="pagination">
+        <button onclick="previousPage()">Предыдущая</button>
+        <span id="page-number"></span>
+        <button onclick="nextPage()">Следующая</button>
+      </div>
+    <script src="./task_24.js"></script>
+</body>
+</html>
